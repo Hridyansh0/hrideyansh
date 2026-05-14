@@ -22,8 +22,8 @@ export const Route = createFileRoute("/auth")({
 function AuthPage() {
   const navigate = useNavigate();
   const { t } = useT();
-  const [step, setStep] = useState<"phone" | "otp">("phone");
-  const [phone, setPhone] = useState("");
+  const [step, setStep] = useState<"email" | "otp">("email");
+  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [otp, setOtp] = useState("");
   const [loading, setLoading] = useState(false);
